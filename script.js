@@ -79,8 +79,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ----- Optional: Navbar background on scroll (already transparent) -----
-// Add a subtle shadow when scrolled
+// ----- Navbar shadow on scroll -----
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
 
@@ -94,8 +93,7 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// ----- Smooth reveal animation on scroll (optional enhancement) -----
-// Simple fade-in for cards using Intersection Observer
+// ----- Smooth reveal animation on scroll (Intersection Observer) -----
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
